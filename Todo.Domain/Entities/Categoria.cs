@@ -4,13 +4,13 @@ public class Categoria
 {
     public Guid IdDaCategoria {get; private set;}
     public string Nome {get; private set;}
-    public string Color {get; private set;}
+    public string Cor {get; private set;}
     
     
-    Categoria(string nome, string color)
+    public Categoria(string nome, string cor)
     {
         IdDaCategoria = Guid.NewGuid();    
         Nome = nome;
-        Color = color;
+        Cor = cor;
     }
 }

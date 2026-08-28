@@ -6,7 +6,7 @@ public interface ICategoriaRepository
     Task<Categoria?> BuscarPorIdAsync(Guid id);
  	Task<List<Categoria>> ListarCategoriasAsync();
     Task ExcluirPorIdAsync(Guid id);
-	Task<Id> CriarCategoriaAsync(string nome);
-	Task ExisteIgual(string nome, Guid? ignorarId);
-	Task AtualizarCategoria(Categoria categoria);
+	Task<Guid> CriarCategoriaAsync(string nome, string cor);
+	Task<bool> ExisteIgualAsync(string nome, Guid? ignorarId);
+	Task AtualizarCategoriaAsync(Categoria categoria);
 }
