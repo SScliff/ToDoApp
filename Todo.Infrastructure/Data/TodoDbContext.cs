@@ -1,6 +1,7 @@
 ﻿namespace Todo.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using Domain.Entities;
+using Todo.Domain.Entities;
+using Todo.Infrastructure.Configurations;
 
 public class TodoDbContext : DbContext
 {
