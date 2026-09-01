@@ -44,7 +44,7 @@ public class CategoriaRepository : ICategoriaRepository
 
     public async Task<bool> ExisteIgualAsync(string nome, Guid? ignorarId)
     {
-        return await _context.Categorias.AnyAsync(c => c.IdDaCategoria == ignorarId && c.Nome == nome);
+        return await _context.Categorias.AnyAsync(c => c.IdDaCategoria != ignorarId && c.Nome == nome);
     }
 
     public async Task AtualizarCategoriaAsync(Categoria categoria)
