@@ -1,6 +1,13 @@
-@Todo.Api_HostAddress = http://localhost:5235
+@HostAddress = http://localhost:5235
 
-GET {{Todo.Api_HostAddress}}/weatherforecast/
-Accept: application/json
+POST {{HostAddress}}/api/todo
+Content-Type: application/json
+
+{
+  "title": "Estudar Entity Framework Core",
+  "description": "Migrations, DbContext e Fluent API",
+  "priority": 1,
+  "dueDate": "2026-09-10T00:00:00"
+}
 
 ###
