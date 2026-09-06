@@ -3,12 +3,7 @@ namespace Todo.Domain.Entities;
 
 public class Category : BaseEntity
 {
-    /// <summary>Nome da categoria, de 2 a 50 caracteres. Único entre todas as categorias.</summary>
-    /// <example>Backend</example>
     public string Name { get; private set; }
-
-    /// <summary>Cor de exibição em hexadecimal, no formato <c>#RRGGBB</c>.</summary>
-    /// <example>#5B34D6</example>
     public string Color { get; private set; }
 
 
