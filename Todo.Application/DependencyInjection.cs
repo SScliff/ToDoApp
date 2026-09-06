@@ -3,7 +3,7 @@ using Todo.Application.UseCases;
 
 namespace Todo.Application;
 
-public static class DependecyInjection
+public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
